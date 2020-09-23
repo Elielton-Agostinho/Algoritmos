@@ -164,6 +164,150 @@ var server = http.createServer(function (request, response) {
                 response.end();
             }
         });
+    }else if(request.url === '/index2.html'){
+        fs.readFile('./assets/outros/index2.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/index-company.html'){
+        fs.readFile('./assets/outros/index-company.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/logout.html'){
+        fs.readFile('./assets/outros/logout.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/newsfeed.html'){
+        fs.readFile('./assets/outros/newsfeed.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/inbox.html'){
+        fs.readFile('./assets/outros/inbox.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/messages.html'){
+        fs.readFile('./assets/outros/messages.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/time-line.html'){
+        fs.readFile('./assets/outros/time-line.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/timeline-photos.html'){
+        fs.readFile('./assets/outros/timeline-photos.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/timeline-videos.html'){
+        fs.readFile('./assets/outros/timeline-videos.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/timeline-friends.html'){
+        fs.readFile('./assets/outros/timeline-friends.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/timeline-groups.html'){
+        fs.readFile('./assets/outros/timeline-groups.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/timeline-pages.html'){
+        fs.readFile('./assets/outros/timeline-pages.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
     }else if(request.url === '/strip-skins/strip/previous.png'){
         fs.readFile('./assets/css/strip-skins/strip/previous.png', null,(err,data) =>{
             if(err){
@@ -230,6 +374,9 @@ var server = http.createServer(function (request, response) {
             }else{dir = '.'+arquivo;}
             //console.log(dir)
             tipo = 'image/png'
+        }else if(diretorio[1] === 'html'){
+            dir = './assets/outros'+arquivo;
+            tipo = 'text/html'
         }
         dir3 = arquivo.split("/");
             
@@ -242,8 +389,8 @@ var server = http.createServer(function (request, response) {
             fonts = arquivo.split("?");
             dir = '.'+fonts[0];
         }else{dir = '.'+arquivo;}
-        console.log(request.url);
-        console.log(dir)
+        //console.log(request.url);
+        //console.log(dir)
         fs.readFile(dir, null,(err,data) =>{
             if(err){
                 response.statusCode = 500;
