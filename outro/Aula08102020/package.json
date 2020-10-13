@@ -1,0 +1,18 @@
+{
+  "name": "packge_config",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "node.js",
+  "scripts": {
+    "test": "e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "e"
+  },
+  "keywords": [
+    "e"
+  ],
+  "author": "e",
+  "license": "MIT"
+}

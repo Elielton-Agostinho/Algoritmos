@@ -308,6 +308,222 @@ var server = http.createServer(function (request, response) {
                 response.end();
             }
         });
+    }else if(request.url === '/about.html'){
+        fs.readFile('./assets/outros/about.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/edit-profile-basic.html'){
+        fs.readFile('./assets/outros/edit-profile-basic.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/edit-interest.html'){
+        fs.readFile('./assets/outros/edit-interest.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/edit-work-eductation.html'){
+        fs.readFile('./assets/outros/edit-work-eductation.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/edit-account-setting.html'){
+        fs.readFile('./assets/outros/edit-account-setting.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/fav-page.html'){
+        fs.readFile('./assets/outros/fav-page.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/groups.html'){
+        fs.readFile('./assets/outros/groups.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/page-likers.html'){
+        fs.readFile('./assets/outros/page-likers.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/people-nearby.html'){
+        fs.readFile('./assets/outros/people-nearby.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/create-fav-page.html'){
+        fs.readFile('./assets/outros/create-fav-page.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/edit-password.html'){
+        fs.readFile('./assets/outros/edit-password.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/notifications.html'){
+        fs.readFile('./assets/outros/notifications.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/contact.html'){
+        fs.readFile('./assets/outros/contact.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/404.html'){
+        fs.readFile('./assets/outros/404.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/faq.html'){
+        fs.readFile('./assets/outros/faq.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/insights.html'){
+        fs.readFile('./assets/outros/insights.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/knowledge-base.html'){
+        fs.readFile('./assets/outros/knowledge-base.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
+    }else if(request.url === '/widgets.html'){
+        fs.readFile('./assets/outros/widgets.html', null,(err,data) =>{
+            if(err){
+                response.statusCode = 500;
+                response.end(err.message);
+            }else{
+                response.statusCode = 200;
+                response.setHeader('Content-Type','text/html');
+                response.write(data);
+                response.end();
+            }
+        });
     }else if(request.url === '/strip-skins/strip/previous.png'){
         fs.readFile('./assets/css/strip-skins/strip/previous.png', null,(err,data) =>{
             if(err){
