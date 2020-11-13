@@ -35,6 +35,21 @@ app.get('/fib', (req, res) => {
     res.render('pages/fibonacci')
 })
 
+//Página Mdc
+app.get('/mdc', (req, res) => {
+    res.render('pages/mdc')
+})
+
+//Ordenação de Array
+app.get('/ordenacao', (req, res) => {
+    res.render('pages/ordenacao')
+})
+
+//Contagem
+app.get('/contagem', (req, res) => {
+    res.render('pages/contagem')
+})
+
 app.post('/contact', (req, res) => {
     res.send('Obrigado por entrar em contato conosco, ' + req.body.name + '! Responderemos em breve!')
 })
