@@ -22,6 +22,11 @@ app.listen(port, () => {
 
 //Página Números primos
 app.get('/', (req, res) => {
+    res.render('pages/home')
+})
+
+//Página Números primos
+app.get('/primo', (req, res) => {
     res.render('pages/primo')
 })
 

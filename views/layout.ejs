@@ -1,66 +1,179 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
+<html lang="en">
+<head>
+    <title>Algorítimos Fundamentais</title>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <style>
-        body {
-            overflow-x: hidden;
-        }
-        #header,#title{
-            border: 1px solid #000;
-            text-align: center;
-        }
-        #header .col{
-            border-right: 1px solid #000;
-        }
-    </style>
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <title>Entregável Algoritmos</title>
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
 
-  </head>
-  <body> 
-    <div class="row" id="title" >
-        <h3 style="margin-left: 15em;">
-            <b>N389-84 Ambientes desenv de software</b>
-        </h3>
-    </div>
-    <div id="header" class="row justify-content-md-center">
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-content">
+        <header class="site-header">
+            
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="/" rel="home">Algoritimos<span> Fundamentais</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="#">Home</a></li>
+                                    <li><a href="/contagem">Contagem</a></li>
+                                    <li><a href="/fib">Fibonacci</a></li>
+                                    <li><a href="/mdc">Mdc</a></li>
+                                    <li><a href="/ordenacao">Ordenação</a></li>
+                                    <li><a href="/primo">Primo</a></li>
+                                    <li><a href="/somatorio">Somatório</a></li>
+                                </ul>
+
+
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="hero-content-overlay" >
+            <div class="container" >
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start" style="margin-top:-55px;">
+                          <%- body %>
+                        </div><!-- .hero-content-wrap -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .hero-content-hero-content-overlay -->
+    </div><!-- .hero-content -->
+
+    <div class="icon-boxes">
+        <div class="container-fluid">
+            <div class="flex flex-wrap align-items-stretch"></div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .icon-boxes -->
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+              
+                <div class="row">
+                  
+                    <h3 style="margin-left: 16em;">Conheça Nosso Time</h3>
+                  
+                </div><br/>
+                <div class="row">
+                  
+                    <div class="col-12 col-md-6 col-lg mt-5 mt-md-0">
+                      <div class="foot-contact">
+                        <div class="card" >
+                          <center><img class="card-img-top rounded-circle" style="height: 170px; width: 170px;" src="/images/agostinho.jpeg" alt="Imagem de capa do card">
+                          </center>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Matrícula:</b> 2026439</li>
+                            <li class="list-group-item">Antonio E. Agostinho</li>
+                            <!--<li class="list-group-item">elieltonagostinho@edu.unifor.br</li>-->
+                          </ul>
+                        </div>
+                      </div><!-- .foot-contact -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg mt-5 mt-md-0">
+                        <div class="foot-contact">
+                          <div class="card" >
+                            <center><img class="card-img-top rounded-circle" style="height: 170px; width: 170px;" src="/images/camilly.jpg" alt="Imagem de capa do card">
+                            </center>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><b>Matrícula:</b> 2015256</li>
+                              <li class="list-group-item">Camilly de Sousa</li>
+                              <!--<li class="list-group-item">camillyst2002@edu.unifor.br</li>-->
+                            </ul>
+                          </div>
+                        </div><!-- .foot-contact -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg mt-5 mt-md-0">
+                      <div class="foot-contact">
+                        <div class="card" >
+                          <center><img class="card-img-top rounded-circle" style="height: 170px; width: 170px;" src="/images/marques.jpg" alt="Imagem de capa do card">
+                          </center>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Matrícula:</b> 2015504</li>
+                            <li class="list-group-item">Caio Marques Silva</li>
+                            <!--<li class="list-group-item">caiom.1994@gmail.com</li>-->
+                          </ul>
+                        </div>
+                      </div><!-- .foot-contact -->
+                  </div><!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg mt-5 mt-md-0">
+                  <div class="foot-contact">
+                    <div class="card" >
+                      <center><img class="card-img-top rounded-circle" style="height: 170px; width: 170px;" src="/images/daniel.jpg" alt="Imagem de capa do card">
+                      </center>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Matrícula:</b> 2013936</li>
+                        <li class="list-group-item">Daniel Macedo</li>
+                        <!--<li class="list-group-item">danielmacedo.ceara@edu.unifor.br</li>-->
+                      </ul>
+                    </div>
+                  </div><!-- .foot-contact -->
+              </div><!-- .col -->
+
+              <div class="col-12 col-md-6 col-lg mt-5 mt-md-0">
+                <div class="foot-contact">
+                  <div class="card" >
+                    <center><img class="card-img-top rounded-circle" style="height: 170px; width: 170px;" src="/images/alan.jpeg" alt="Imagem de capa do card">
+                    </center>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b>Matrícula:</b> 1913379</li>
+                      <li class="list-group-item">Alan de Sousa</li>
+                    </ul>
+                  </div>
+                </div><!-- .foot-contact -->
+            </div><!-- .col -->
+
+                    
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
         
-        <div class="col" style="margin-left: 1em;">
-            <label><b>Matrícula:</b> 2026439/0</label>
-        </div>
-        <div class="col">
-            <label><b>Nome:</b> Antonio Elielton Santos Agostinho</label>
-        </div>
-        <div class="col">
-            <label><b>Data:</b> 12/10/2020</label>
-        </div>
-    </div>
-    <br/><br/>
-    <div class="row justify-content-md-center">  
-        <div class="col"></div>
-        <div class="col-5">
-            <div class="accordion" id="accordionExample">
-           
-                <%- body %>
-        
-            </div>
-        </div>
-        <div class="col"></div>
-    </div>
+    </footer><!-- .site-footer -->
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
